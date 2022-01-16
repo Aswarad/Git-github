@@ -1,0 +1,102 @@
+#Task-1
+REGex Software Services
+DataScience Specialization Program
+Registration I'd:DIRSS3125
+Name:Aswar Ahamed
+College Name:B.S.Abdur Rahman Crescent Institute of Science and Technology.
+In this task I have done the assignment related to git and github in REGex Software Services
+1.What is the difference between pushing and pulling ?
+Pushing - pushing sends the latest commitment history from your local area to GitHub. If you are the only one working in the last resort, pushing is easy. If there are others who reach the finish line, you may need to drag before you push.The pushing of the local repository content to a remote repository. After a local repository has been modified a push is executed to share the modifications with remote team members. 
+Pulling-It brings back changes to a remote location and applied to your local storage location. You probably won’t do much; is very useful in a group environment where more than one person submits changes to one last location.It is used to fetch and merge changes from the remote repository to the local repository. The pull command is a combination of two commands, git fetch command followed by git merge command.Git fetch command downloads content from the required remote repository, while Git merge command combines multiple sequences of commits into a single branch.
+------------------------------------------------------------------------------------------------------------------------------------------------ 
+2.How to initialise a new git repository[ Describe all the steps ] ?
+Git Cache is the virtual storage of your project. Allows you to save your own code versions, which you can access if needed.
+Step1:To create a new repository, you will use the git init command. Git init is a one-time command that you use during the initial set up of a new repo. Executing this command will create a new .git directory in your current active directory. This will also create a new main branch.
+Step2:Identifying the git init in the existing project guide will use the same initial setup as mentioned above, but achieved that project guide.
+For Example:
+cd /path/to/your/existing/code git init (existing project folder that you would like to create a repo within. You'll first cd to the root project folder and then execute the git init command) 
+git init <project directory> 
+Step3: Initialize the bare repository using git init-Using an empty repository is helpful if you are using Git as a backup method. For example, suppose you are working on a project that uses a set of resources that do not need to be changed. You can keep those resources in an empty GIt field.
+*This makes sense because the archive content does not need to be changed. However, developers in the project may need access to the data stored in the archive.
+*Empty cabinets are common on Git mirrors. This is because empty warehouses do not require a functional tree. 
+*They just need metadata and files associated with the repository. No active tree needs to be present because no people will change the screen. Donors will change the files on their local machine and push those changes on the screen.
+For Example: git init—bare<folder>
+Step4: Write some code that you want to add in git.After you’ve made some small modifications to your project and checked that they work, use git add to indicate that they’re ready. 
+For Example: $ git add R/modified.R man/modified.Rd
+Then use git commit to add the modifications to the repository.For Instance:
+$git commit.
+------------------------------------------------------------------------------------------------------------------------------------------------
+3.What is the use of git clone and how to use it?
+Cloning is the process of creating a single copy of the Git Remote Repository on a local machine.
+*When we compile the storage space, all the files are uploaded to the local machine but the remote git repository remains unchanged. Making changes and commitments to your local repository (integrated repository) will not affect the remote storage you created in any way. These changes to the local machine can be synchronized with the remote control whenever the user wants.
+*First, the git clone command is used to identify an existing repository and merge or copy it into a new directory. A copy of the server location, accessible to sample.com can be obtained using the SSH x_person username.For example------->(git clone ssh://x_person@example.com/path/to/team-project.git cd team-project )
+*Git clone launches a new Git repository in the group project folder on your local machine and fills it with central storage content. After that, you can cd in the project to start file conversion, commitment shortcuts, and interact with other repositories.
+1.Merging a folder(Cloning to a certain folder)-You must clone the storage location in the <repo> folder called <directory> in the local machine.
+git clone <repo> <directory> 
+2.Combining a specific mark(Cloning a certain tag)-Close the repository in <repo> and only merge the <tag> template.
+------------------------------------------------------------------------------------------------------------------------------------------------
+4.How to ignore some files/folders from pushing?
+You can make Git ignore certain files and references - that is, remove them from Git tracking - by creating one or more .gitignore files in your repository.
+For software projects, .gitignore usually contains a list of files and / or references generated during the build process or during operation. Featured in the .gitignore file may include words or expressions that identify:
+1.professional services e.g. repositories, log files, encrypted code, etc.
+2. Location configuration files that should not be shared with other developers
+3. files containing private information, such as login passwords, keys and details
+If created in a high-level directory, the rules will apply repeatedly to all files and sub-directories throughout the repository. If it is built on a sub-directory, the rules will apply to that specific directory and sub-guidelines.
+If the file or directory is ignored, it will not be:
+1.followed by Git
+2.reported for commands such as git or git diff
+3.composed with instructions like git add -A
+In rare cases where you need to ignore tracked files, special care should be taken. See: Ignore files that are already committed to the Git area.
+If you have already added a file to your Git repository and now want to stop tracking it (so that it won't be present in future commits), you can remove it from the index:git rm --cached <file>
+------------------------------------------------------------------------------------------------------------------------------------------------
+5.What do you mean by Branch?
+
+For Git, the branch is an indicator of some commitment. The branch identifier goes hand in hand with each new commitment you make, and only deviates from the graph when the commitment is made to the ancestors' commitment. There are various commands you can take from Git to work with your branches.
+i)Which branch should be used to keep deployment-ready code?
+The central branch — always in good condition(deployment ready state). In other words, the main project branch should contain only the tested work and quality, and should never be violated.
+ii)Create a new branch called development from the main branch ?
+To create a Git branch is to use the “git checkout” command with the “-b” option for a new branch. Next, you just have to specify the name for the branch you want to create. ($ git checkout -b <branch-name>)
+Create a new dev branch
+1. Do your work on local dev branch
+2. Push dev branch from your local to central git repository
+3. Once your work is done, merge dev branch to master
+4. Finally, delete the dev branch from both local and central git repository.
+iii)Checkout one more branch deployment from the previous branch.
+*If want to support your new branch in a different existing branch, simply add the name of that branch as the starting point. ($ git branch <new-branch> <base-branch>)
+iv)Push different data into both branches.
+*Branch using cherrypick command, and then push both branches using git push origin branchA branchB.
+*In order to push your branch to another remote branch, use the “git push” command and specify the remote name, the name of your local branch as the name of the remote branch.$ git push <remote> <local_branch>:<remote_name>
+v)Merge data from both branches to the main branch
+*To link branches to a location, use the git checkout to switch to the branch you want to meet. This branch is usually a large branch. Next, use git mergeand specify the name of another branch you will bring to this branch.
+git checkout main
+git merge
+Work continues on the main and other branches, so they no longer share a common commit history. 
+------------------------------------------------------------------------------------------------------------------------------------------------
+6.How to resolve conflict with merge ?
+1.Open Git Bash.
+2.Navigate into the local Git repository that has the merge conflict.
+3.Generate a list of the files affected by the merge conflict. 
+4.Open your favorite text editor, and navigate to the file that has merge conflicts.
+5.To see the beginning of the merge conflict in your file, search the file for the conflict marke <<<<<<<. When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line<<<<<<< HEAD. Next, you'll see =======, which divides your changes from the changes in the other branch, followed by >>>>>>> BRANCH-NAME. In this example, one person wrote "open an issue" in the base or HEAD branch and another person wrote "ask your question in IRC" in the compare branch or branch-a.
+6.Decide if you want to keep only your branch's changes, keep only the other branch's changes, or make a brand new change, which may incorporate changes from both branches. Delete the conflict markers <<<<<<<,=======,>>>>>>> and make the changes you want in the final merge.
+7.Add or stage your changes. 
+8.Commit your changes with a comment.  
+------------------------------------------------------------------------------------------------------------------------------------------------
+7.What is rebase and how is it different from merge in git ?
+*Git rebase is a command that allows developers to integrate changes from one branch to another.
+*Git rebase compresses all the changes into a single “patch.” Then it integrates the patch onto the target branch. Unlike merging, rebasing flattens history. It transfers the completed work from one branch to another. In the process, unwanted history is eliminated.Advocates of Git rebase like it because it simplifies their review process.
+*Streamlines a potentially complex history.
+*Avoids merge commit “noise” in busy repos with busy branches.
+*Cleans intermediate commits by making them a single commit, which can be helpful for DevOps teams.
+In git merge-*It is Simple and familiar.
+*Preserves complete history and chronological order.
+*Maintains the context of the branch.
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
